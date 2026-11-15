@@ -171,7 +171,7 @@ public class Bb implements Serializable {
                     """;
             // 1er argument : la valeur du rôle (envoyé au serveur)
             // 2ème argument : le libellé du rôle dans la liste déroulante.
-            this.listeRolesSysteme.add(new SelectItem(role, "Assistant"));
+            this.listeRolesSysteme.add(new SelectItem(role, "Porofessor"));
 
             role = """
                     You are an interpreter. You translate from English to French and from French to English.
@@ -179,14 +179,14 @@ public class Bb implements Serializable {
                     If the user type an English text, you translate it into French.
                     If the text contains only one to three words, give some examples of usage of these words in English.
                     """;
-            this.listeRolesSysteme.add(new SelectItem(role, "Traducteur Anglais-Français"));
+            this.listeRolesSysteme.add(new SelectItem(role, "OPGG"));
 
             role = """
                     Your are a travel guide. If the user type the name of a country or of a town,
                     you tell them what are the main places to visit in the country or the town
                     are you tell them the average price of a meal.
                     """;
-            this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+            this.listeRolesSysteme.add(new SelectItem(role, "Blitz"));
         }
 
         return this.listeRolesSysteme;
